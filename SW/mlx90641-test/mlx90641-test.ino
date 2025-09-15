@@ -1,7 +1,22 @@
-// MLX90641 + ESP32-S3 + Melexis MLX90641 API
-// Pins (ESP32-S3):
-// - POWER_PIN can be tied to 3V3 permanently for production. GPIO control is handy for bring-up.
-// - Avoid pinMode() on SDA/SCL. Wire.begin() configures the I2C peripheral properly.
+/* MLX90641 Thermal Camera (LaskaKit ESP32-S3 Devkit + Python Visualization)
+ *
+ * Board:   LaskaKit ESP32-S3-DEVKit                  https://www.laskakit.cz/laskakit-esp32-s3-devkit
+ * Sensor:  LaskaKit MLX90641 Thermocamera 16x12      tbd
+ *
+ * This project uses the **LaskaKit MLX90641 (16×12 thermal sensor)** with LaskaKit ESP32-S3 Devkit**.  
+ * The ESP32 reads thermal frames over I²C and streams them as CSV over USB serial.  
+ * A Python script on your PC/Mac listens to the serial data and plots a **live heatmap**.
+ *
+ * Make sure you include (All are prepared in this folder):
+ *  - `mlx90641-test.ino` (this sketch)
+ *  - `MLX90641_API.cpp/.h` (from [Melexis MLX90641 library: https://github.com/melexis/mlx90641-library/tree/master/)
+ *  - `MLX90641_I2C_Driver.cpp/.h` (Arduino Wire-based driver, rewrited by us, ! not the mbed version!)
+ *
+ * Email:podpora@laskakit.cz
+ * Web:laskakit.cz
+ */
+
+
 #define POWER_PIN 47
 #define I2C_SDA   42
 #define I2C_SCL    2
