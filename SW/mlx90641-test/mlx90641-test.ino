@@ -1,7 +1,7 @@
 /* MLX90641 Thermal Camera (LaskaKit ESP32-S3 Devkit + Python Visualization)
  *
  * Board:   LaskaKit ESP32-S3-DEVKit                  https://www.laskakit.cz/laskakit-esp32-s3-devkit
- * Sensor:  LaskaKit MLX90641 Thermocamera 16x12      tbd
+ * Sensor:  LaskaKit MLX90641 Thermocamera 16x12      https://www.laskakit.cz/laskakit-mlx90641-modul-termokamery-16--12px-55--x35/
  *
  * This project uses the **LaskaKit MLX90641 (16×12 thermal sensor)** with LaskaKit ESP32-S3 Devkit**.  
  * The ESP32 reads thermal frames over I²C and streams them as CSV over USB serial.  
