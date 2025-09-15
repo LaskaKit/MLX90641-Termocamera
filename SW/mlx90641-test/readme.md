@@ -1,6 +1,6 @@
-# MLX90641 Thermal Camera (ESP32-S3 + Python Visualization)
+# MLX90641 Thermal Camera (LaskaKit ESP32-S3 Devkit + Python Visualization)
 
-This project uses the **Melexis MLX90641 (16×12 thermal sensor)** with an **ESP32-S3**.  
+This project uses the **LaskaKit MLX90641 (16×12 thermal sensor)** with LaskaKit ESP32-S3 Devkit**.  
 The ESP32 reads thermal frames over I²C and streams them as CSV over USB serial.  
 A Python script on your PC/Mac listens to the serial data and plots a **live heatmap**.
 
