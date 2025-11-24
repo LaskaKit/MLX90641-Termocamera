@@ -1,0 +1,8 @@
+Designator,Mid X,Mid Y,Layer,Rotation
+C1,-7.37, 7.75,Top,180.0
+C2,-7.37, 5.71,Top,180.0
+J1,-7.90,12.71,Top,90.0
+J2, 7.90,12.70,Top,270.0
+R1, 6.99, 6.35,Top,0.0
+R2, 6.99, 7.62,Top,0.0
+I2C_PULLUP, 9.53, 6.99,Bottom,90.0
