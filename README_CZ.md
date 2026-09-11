@@ -36,7 +36,7 @@ Samotný MLX90641 je čtyřvývodové pouzdro TO-39, které si musíš sám zapo
 
 ## Jak ho zapojit
 
-Konektor μŠup vede **3V3, GND, SDA, SCL**. Modul připojíš jedním kabelem k libovolné naší desce - třeba k [ESP32-S3 DevKit](https://www.laskakit.cz/laskakit-esp32-s3-devkit/), [ESP32-DEVKit](https://www.laskakit.cz/laskakit-esp32-devkit/), úspornému [ESP32-C3 LPKit](https://www.laskakit.cz/laskkit-esp-12-board/), [Meteo Mini](https://www.laskakit.cz/laskakit-meteo-mini/) nebo k [ESPD-3.5 s 3,5" TFT displejem](https://www.laskakit.cz/laskakit-espd-35-esp32-3-5-tft-ili9488-touch/), pokud chceš termosnímek zobrazovat přímo na zařízení.
+Konektor μŠup vede **3V3, GND, SDA, SCL**. Modul připojíš jedním kabelem k libovolné naší desce - třeba k [ESP32-S3 DevKit](https://www.laskakit.cz/laskakit-esp32-s3-devkit/), [ESP32-DEVKit](https://www.laskakit.cz/laskakit-esp32-devkit/), úspornému [ESP32-C3 LPKit](https://www.laskakit.cz/laskkit-esp-12-board/), [Meteo Mini](https://www.laskakit.cz/laskakit-meteo-mini/) nebo k [ESPD-3.5 s 3,5" TFT displejem](https://www.laskakit.cz/laskakit-espd-35-esp32-3-5-tft-ili9488-touch/), pro který máme **hotovou termokameru s dotykovým displejem** - viz [ESPD-35/SW/MLX90641-Termocamera](https://github.com/LaskaKit/ESPD-35/tree/main/SW/MLX90641-Termocamera).
 
 Naše desky samozřejmě nejsou podmínka - postačí jakékoli [Arduino](https://www.laskakit.cz/arduino-2/), [Raspberry Pi nebo Rock Pi](https://www.laskakit.cz/mini-pc/) s 3,3V I²C sběrnicí. Jen pozor, modul je **pouze na 3,3 V**, takže s pětivoltovými deskami použij převodník úrovní.
 
@@ -67,7 +67,9 @@ python3 mlx90641_plot.py
 - `3D/` - 3D model modulu (STEP, Fusion 360)
 - `Production/` - gerbery a soubory BOM/CPL
 - `SW/` - ukázkový kód
+### Hotová termokamera s displejem
 
+Pokud máš [ESPD-3.5](https://www.laskakit.cz/laskakit-espd-35-esp32-3-5-tft-ili9488-touch/), nemusíš nic psát - kompletní aplikace, která kreslí teplotní obraz přímo na 3,5" dotykový displej, je v repozitáři desky: [ESPD-35/SW/MLX90641-Termocamera](https://github.com/LaskaKit/ESPD-35/tree/main/SW/MLX90641-Termocamera). Modul připojíš kabelem μŠup a nahraješ sketch.
 ## Kde modul koupíš
 
 **[https://www.laskakit.cz/laskakit-mlx90641-modul-termokamery-16--12px-55--x35/](https://www.laskakit.cz/laskakit-mlx90641-modul-termokamery-16--12px-55--x35/)**
