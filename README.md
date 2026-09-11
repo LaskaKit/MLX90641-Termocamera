@@ -36,7 +36,7 @@ The MLX90641 alone is a 4-pin TO-39 can that you have to wire, pull up and power
 
 ## How to connect it
 
-The μSup connector carries **3V3, GND, SDA, SCL**. Connect the module to any of our boards with a single cable - for example the [ESP32-S3 DevKit](https://www.laskakit.cz/laskakit-esp32-s3-devkit/), the [ESP32-DEVKit](https://www.laskakit.cz/laskakit-esp32-devkit/), the low-power [ESP32-C3 LPKit](https://www.laskakit.cz/laskkit-esp-12-board/), [Meteo Mini](https://www.laskakit.cz/laskakit-meteo-mini/) or the [ESPD-3.5 with a 3.5" TFT display](https://www.laskakit.cz/laskakit-espd-35-esp32-3-5-tft-ili9488-touch/) if you want to show the thermal image directly on the device.
+The μSup connector carries **3V3, GND, SDA, SCL**. Connect the module to any of our boards with a single cable - for example the [ESP32-S3 DevKit](https://www.laskakit.cz/laskakit-esp32-s3-devkit/), the [ESP32-DEVKit](https://www.laskakit.cz/laskakit-esp32-devkit/), the low-power [ESP32-C3 LPKit](https://www.laskakit.cz/laskkit-esp-12-board/), [Meteo Mini](https://www.laskakit.cz/laskakit-meteo-mini/) or the [ESPD-3.5 with a 3.5" TFT display](https://www.laskakit.cz/laskakit-espd-35-esp32-3-5-tft-ili9488-touch/), for which we have a **ready-made thermal camera application** - see [ESPD-35/SW/MLX90641-Termocamera](https://github.com/LaskaKit/ESPD-35/tree/main/SW/MLX90641-Termocamera).
 
 You are of course not limited to our boards - any [Arduino](https://www.laskakit.cz/arduino-2/), [Raspberry Pi or Rock Pi](https://www.laskakit.cz/mini-pc/) with a 3.3 V I²C bus will do. Just keep in mind the module is **3.3 V only**, so use a level shifter with 5 V boards.
 
@@ -67,7 +67,9 @@ python3 mlx90641_plot.py
 - `3D/` - 3D model of the module (STEP, Fusion 360)
 - `Production/` - gerbers and BOM/CPL files
 - `SW/` - example code
+### Ready-made thermal camera with a display
 
+If you have the [ESPD-3.5](https://www.laskakit.cz/laskakit-espd-35-esp32-3-5-tft-ili9488-touch/), you don't have to write anything - a complete application that draws the thermal image straight onto the 3.5" touch display lives in the board's repository: [ESPD-35/SW/MLX90641-Termocamera](https://github.com/LaskaKit/ESPD-35/tree/main/SW/MLX90641-Termocamera). Plug the module in with a μSup cable and flash the sketch.
 ## Where to buy
 
 **[https://www.laskakit.cz/laskakit-mlx90641-modul-termokamery-16--12px-55--x35/](https://www.laskakit.cz/laskakit-mlx90641-modul-termokamery-16--12px-55--x35/)**
